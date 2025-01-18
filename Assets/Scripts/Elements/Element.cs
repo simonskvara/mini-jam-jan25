@@ -27,4 +27,23 @@ public class Element : MonoBehaviour
         yield return new WaitForSeconds(timeUntilCanDestroy);
         CanDestroy = true;
     }
+    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            if (_rb != null)
+            {
+                
+                Vector2 normal = collision.contacts[0].normal;
+                float velAlongNormal = Vector2.Dot(_rb.velocity, normal);
+                if (velAlongNormal > 0)
+                {
+                    Vector2 bounceVelocity = velAlongNormal * normal;
+                    _rb.velocity -= bounceVelocity;
+                }
+            }
+        }
+    }
+
 }
