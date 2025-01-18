@@ -66,6 +66,13 @@ public class ElementSpawner : MonoBehaviour
         Vector2 direction = _player.transform.position - transform.position;
         
         elementRb.AddForce(/*new Vector2(randomX, 1)*/ direction * randomForce);
-        
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Element"))
+        {
+            //Destroy(other.gameObject);
+        }
     }
 }
