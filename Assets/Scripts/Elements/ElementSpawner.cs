@@ -70,9 +70,9 @@ public class ElementSpawner : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Element"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Element") && other.GetComponent<Element>().CanDestroy)
         {
-            //Destroy(other.gameObject);
+            Destroy(other.gameObject);
         }
     }
 }
