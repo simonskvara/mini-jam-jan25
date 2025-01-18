@@ -12,7 +12,8 @@ public class ElementSpawner : MonoBehaviour
     public Transform spawnPoint;
 
     private Vector3 _spawnPosition;
-    
+
+    private GameObject _player;
 
     private float _lastTimeSpawned;
     
@@ -33,6 +34,9 @@ public class ElementSpawner : MonoBehaviour
         {
             _spawnPosition = spawnPoint.position;
         }
+        
+        _player = GameObject.FindGameObjectWithTag("Player");
+        
     }
 
     private void Update()
@@ -48,7 +52,7 @@ public class ElementSpawner : MonoBehaviour
     private void SpawnElement()
     {
         int randomIndex = Random.Range(0, elements.Count);
-        GameObject spawnedElement = Instantiate(elements[randomIndex], transform.position, Quaternion.identity);
+        GameObject spawnedElement = Instantiate(elements[randomIndex], _spawnPosition, Quaternion.identity);
         Rigidbody2D elementRb = spawnedElement.GetComponent<Rigidbody2D>();
         
         if (!elementRb)
@@ -57,9 +61,11 @@ public class ElementSpawner : MonoBehaviour
         }
 
         float randomForce = Random.Range(minSpawnForce, maxSpawnForce);
-        float randomY = Random.Range(-0.8f, 0.8f);
+        float randomX = Random.Range(-0.8f, 0.8f);
+
+        Vector2 direction = _player.transform.position - transform.position;
         
-        elementRb.AddForce(new Vector2(-1, randomY) * randomForce);
+        elementRb.AddForce(/*new Vector2(randomX, 1)*/ direction * randomForce);
         
     }
 }
