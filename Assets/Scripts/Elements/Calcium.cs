@@ -10,7 +10,10 @@ public class Calcium : MonoBehaviour
     private Rigidbody2D _rb;
     
     [SerializeField] private float targetTorque = 1000f;
-    [SerializeField] private float duration = 2f;  
+    [SerializeField] private float duration = 2f;
+
+    public Sprite normalSprite;
+    public Sprite onFireSprite;
     
     private void Start()
     {
@@ -31,16 +34,17 @@ public class Calcium : MonoBehaviour
         }
     }
 
-    private void SetOnFire()
+    public void SetOnFire()
     {
         OnFire = true;
+        gameObject.GetComponent<SpriteRenderer>().sprite = onFireSprite;
         StartCoroutine(SpinRoutine());
     }
 
-    private void StopFire()
+    public void StopFire()
     {
         OnFire = false;
-        
+        gameObject.GetComponent<SpriteRenderer>().sprite = normalSprite;
         StopAllCoroutines();
         _rb.angularVelocity = 0f;
     }
