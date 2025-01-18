@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: Fade out music
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":637.0,"y":-24.0},"zoom":1.0,"elements":[{"argumentCount":0,"coroutine":true,"defaultValues":{"target":null,"name":{"$content":"Fade
+      out","$type":"System.String"}},"position":{"x":-132.0,"y":-74.0},"guid":"a8fa3335-e15d-49cf-8136-fd9acf8a83e5","$version":"A","$type":"Unity.VisualScripting.CustomEvent","$id":"9"},{"defaultValues":{"duration":{"$content":1.0,"$type":"System.Single"},"unscaledTime":{"$content":false,"$type":"System.Boolean"}},"position":{"x":112.0,"y":-26.0},"guid":"5d3dc1a4-b601-4217-995a-feccc197fa61","$version":"A","$type":"Unity.VisualScripting.Timer","$id":"11"},{"chainable":false,"member":{"name":"volume","parameterTypes":null,"targetType":"UnityEngine.AudioSource","targetTypeName":"UnityEngine.AudioSource","$version":"A"},"defaultValues":{"target":null,"input":{"$content":0.0,"$type":"System.Single"}},"position":{"x":527.0,"y":-50.0},"guid":"89842712-2b40-445e-93a7-c342e51ba567","$version":"A","$type":"Unity.VisualScripting.SetMember","$id":"13"},{"defaultValues":{"a":{"$content":0.1,"$type":"System.Single"},"b":{"$content":0.2,"$type":"System.Single"},"t":{"$content":0.0,"$type":"System.Single"}},"position":{"x":370.0,"y":127.0},"guid":"f1f910d8-fdef-428f-a950-bcaf1766257b","$version":"A","$type":"Unity.VisualScripting.ScalarLerp","$id":"16"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"11"},"destinationKey":"start","guid":"eb3f8fe2-2253-4bd4-a295-7fcbf19ba6cd","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"tick","destinationUnit":{"$ref":"13"},"destinationKey":"assign","guid":"67df9bd6-4ce2-4f3d-8ee2-9bbdb80bf9a6","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"remainingRatio","destinationUnit":{"$ref":"16"},"destinationKey":"t","guid":"40321379-01f3-446a-910f-82075da40968","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"interpolation","destinationUnit":{"$ref":"13"},"destinationKey":"input","guid":"31f45e2d-3c10-4f40-a7ff-a5307457c7c0","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
