@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: -503304929319354198}
   - component: {fileID: 638254651720776011}
   - component: {fileID: 4832706126249287190}
-  - component: {fileID: 7428064229601593241}
   m_Layer: 6
-  m_Name: Calcium
-  m_TagString: Calcium
+  m_Name: Water
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -163,17 +162,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilCanDestroy: 5
---- !u!114 &7428064229601593241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2533239481059595162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ded21fbe0b57ae4592e31ce8aa874c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetTorque: 800
-  duration: 5

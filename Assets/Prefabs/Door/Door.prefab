@@ -105,6 +105,7 @@ MonoBehaviour:
   elements:
   - {fileID: 2533239481059595162, guid: 2ced0253575c00148b12a2959a72f18a, type: 3}
   - {fileID: 2533239481059595162, guid: 25dfa363c4f45f140acf7f00a73e159f, type: 3}
+  - {fileID: 2533239481059595162, guid: dd270ddecbdb319439d9438e04e70c1b, type: 3}
   minSpawnForce: 20
   maxSpawnForce: 100
 --- !u!58 &1881074698986167769
