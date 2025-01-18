@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rateOfSpawning: 3
+  minSpawnRate: 3
+  maxSpawnRate: 7
   spawnPoint: {fileID: 0}
   elements:
   - {fileID: 2533239481059595162, guid: ade7159f1cae1664dbfc3decad022f13, type: 3}
