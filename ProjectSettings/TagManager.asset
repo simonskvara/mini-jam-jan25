@@ -8,6 +8,7 @@ TagManager:
   - Calcium
   - Hydrogen
   - Water
+  - DustyLandmine
   layers:
   - Default
   - TransparentFX
