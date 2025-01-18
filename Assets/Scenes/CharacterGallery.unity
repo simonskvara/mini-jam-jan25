@@ -395,10 +395,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Neona (Ne)
-
-    A noble full of gas, Neona doesn''t interact with anyone,
-    and pushes everyone away...'
+  m_text: Neona (Ne) A noble full of gas, Neona doesn't interact with anyone, and
+    pushes everyone away...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -508,7 +506,14 @@ MonoBehaviour:
       of texts","value":{"$content":[{"$content":"Neona (Ne) A noble full of gas,
       Neona doesn''t interact with anyone, and pushes everyone away...","$type":"System.String"},{"$content":"Cowcium
       (Ca) Cowsium has a burning rage for rOxy, and an allergy to Hydrojan.","$type":"System.String"},{"$content":"Cowcium
-      (Ca) But now on fire","$type":"System.String"}],"$type":"Unity.VisualScripting.AotList"},"typeHandle":{"Identification":"Unity.VisualScripting.AotList,
+      (Ca) But now on fire","$type":"System.String"},{"$content":"rOxy (O) rOxy goes
+      clubbing every weekend before they go back to work on Monday as a nurse. rOxy
+      has an on-off fling with Hydrojan.","$type":"System.String"},{"$content":"Hydrojan
+      (H) She''s been there, She''s seen it all. She''s a clubber in the streets
+      and a nurse in the sheets.","$type":"System.String"},{"$content":"Water (H20)
+      When rOxy and Hydrojan get together, the floor gets so wet it can put out fires.","$type":"System.String"},{"$content":"Hydrocowsium
+      (CaH) Hydrojan just knows how to break Cowsium down. Ready to explode if it
+      touches water.","$type":"System.String"}],"$type":"Unity.VisualScripting.AotList"},"typeHandle":{"Identification":"Unity.VisualScripting.AotList,
       Unity.VisualScripting.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Current
       text","value":{"$content":0,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Max
