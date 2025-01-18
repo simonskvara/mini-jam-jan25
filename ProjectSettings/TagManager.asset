@@ -9,6 +9,7 @@ TagManager:
   - Hydrogen
   - Water
   - DustyLandmine
+  - SceneVariables
   layers:
   - Default
   - TransparentFX

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -503304929319354198}
   - component: {fileID: 638254651720776011}
   - component: {fileID: 4832706126249287190}
+  - component: {fileID: -8771755107738038404}
   m_Layer: 6
   m_Name: DustyLandmine
   m_TagString: DustyLandmine
@@ -162,3 +163,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilCanDestroy: 5
+--- !u!114 &-8771755107738038404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2533239481059595162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49dc9856e7a8fd2438132fa7e6d806a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 2519776066085473114, guid: 10a1d94d9c5c95b499b7f5d404178f37, type: 3}
+  decreaseScore: 50
