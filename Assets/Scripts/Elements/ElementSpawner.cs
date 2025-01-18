@@ -7,7 +7,10 @@ using Random = UnityEngine.Random;
 
 public class ElementSpawner : MonoBehaviour
 {
-    public float rateOfSpawning;
+    [HideInInspector] public float rateOfSpawning;
+    
+    public float minSpawnRate;
+    public float maxSpawnRate;
 
     public Transform spawnPoint;
 
@@ -36,7 +39,9 @@ public class ElementSpawner : MonoBehaviour
         }
         
         _player = GameObject.FindGameObjectWithTag("Player");
-        
+
+        rateOfSpawning = GetRandomSpawnRate();
+
     }
 
     private void Update()
@@ -44,10 +49,16 @@ public class ElementSpawner : MonoBehaviour
         if (Time.time > _lastTimeSpawned + rateOfSpawning)
         {
             SpawnElement();
+            rateOfSpawning = GetRandomSpawnRate();
             _lastTimeSpawned = Time.time;
         }
     }
 
+    private float GetRandomSpawnRate()
+    {
+        float randomTime = Random.Range(minSpawnRate, maxSpawnRate);
+        return randomTime;
+    }
 
     private void SpawnElement()
     {
