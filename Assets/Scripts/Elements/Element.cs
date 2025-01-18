@@ -9,10 +9,17 @@ public class Element : MonoBehaviour
 
     public float timeUntilCanDestroy = 5f;
 
+    private Rigidbody2D _rb;
+    
     private void Start()
     {
         CanDestroy = false;
         StartCoroutine(ChangeDestroy());
+
+        _rb = gameObject.GetComponent<Rigidbody2D>();
+        
+        _rb.interpolation = RigidbodyInterpolation2D.Interpolate;
+        _rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
     }
 
     IEnumerator ChangeDestroy()
